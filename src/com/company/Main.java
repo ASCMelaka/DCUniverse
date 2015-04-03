@@ -9,10 +9,10 @@ import java.util.Random;
 public class Main {
 
     public static void main(String args []) {
-        Heroes batman = new Batman();
+        Heroes robin = new Robin();
         Villains thejoker = new TheJoker();
 
-        Battle battle = new Battle(batman, thejoker);
+        Battle battle = new Battle(robin, thejoker);
         battle.getVictor();
 
     }
