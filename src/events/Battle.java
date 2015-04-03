@@ -38,27 +38,24 @@ public class Battle {
 
         }
 
-        if(hero.checkAlive()){
-            System.out.println(hero.getName() + " Wins!");
+        if(hero.checkAlive())
             victor = hero;
 
-        }else{
-            if (villain.checkAlive()){
-                System.out.println(villain.getName() + " Wins!");
+        else if (villain.checkAlive())
                 victor = villain;
-            }else{
-                System.out.println("DRAW!");
+                
+            else
                 victor = null;
-            }
-        }
+            
+        
 
 
         System.out.println("Battle done!");
     }
 
-    public Characters getVictor(){
+    public Characters getVictor(){ 
         if (victor != null)
-            System.out.println(victor.getName());
+            System.out.println(victor.getName()+ " Won!"); else System.out.println("Draw!"); // Display the winner name or "Draw".
         return victor;
     }
 
