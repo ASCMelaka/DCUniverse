@@ -14,7 +14,11 @@ public class Batman extends Heroes {
         life = 100;
         System.out.println("Batman arrived!");
     }
-
+    
+    private int Stun(){
+        System.out.println("You're stunned");
+        return 20;
+    }
     private int punch(){
         System.out.println("Batman used punch!");
         return 10;
