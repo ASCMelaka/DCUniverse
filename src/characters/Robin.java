@@ -32,8 +32,9 @@ public class Robin extends Heroes {
             damage = beatWithStick();
         }else{
             damage = cry();
+            life = life + 10;
         }
-
+        System.out.println("damage : " + damage);
         return damage;
     }
 
