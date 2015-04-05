@@ -21,6 +21,7 @@ public class Robin extends Heroes {
 
     private int cry(){
         System.out.println("Robin decided to cry...");
+        life = life + 10;
         return 0;
     }
 
@@ -32,7 +33,6 @@ public class Robin extends Heroes {
             damage = beatWithStick();
         }else{
             damage = cry();
-            life = life + 10;
         }
         System.out.println("damage : " + damage);
         return damage;
